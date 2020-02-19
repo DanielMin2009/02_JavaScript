@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Java Script | It Academy</title>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>JavaScript 02 | Bucles & Conditionals</h1>
+
+
+        <div id="answer01">
+        </div>
+
+        <div class="gridTables">
+
+            <button class="btn" id="btn-modalAdd">Split Name <i class="fas fa-arrow-right"></i></button>
+
+        </div>
+
+
+
+        <div class="overlay" id="overlayAdd"></div>
+        <div class="modal" id="modalAdd">
+
+            <button class="modal-close-btn" id="close-btnAdd">
+                <a class="close-button">Close</a>
+            </button>
+            <!-- add Holder Form -->
+            <form name="splitNameForm">
+                <h3>Phase 01 | Split()</h3>
+                <div class="row">
+                    <label>Write your Name</label><br>
+                    <input type="text" id="txtName">
+                </div>
+                
+                <div class="row">
+                    <button onclick="splitName()" type="button" id="splitName">Split Name <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+        
+
+
+
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
