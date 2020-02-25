@@ -139,16 +139,6 @@ h3 {
     font-size:      1.2em;
 }
 
-#answer02, #answer03 {
-    display:                    grid;
-    grid-template-columns:      2fr 1fr;
-    grid-template-rows:         1fr;
-    grid-column-gap:            20px;
-    grid-row-gap:               20px;
-    justify-items:              stretch;
-    align-items:                stretch;
-    width:                      80%;
-}
 
 #answerShowBalance, #showBalance {
     display:                    grid;
