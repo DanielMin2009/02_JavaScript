@@ -1,59 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Java Script | It Academy</title>
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="container">
-        <h1>JavaScript 02 | Bucles & Conditionals</h1>
+      <h1>
+        JavaScript 02<br /><span class="light">Bucles & Conditionals</span>
+      </h1>
+      <hr class="separatorRed" />
 
+      <div id="answer01"></div>
+      <div id="answer02"></div>
+      <div id="answer03"></div>
+      <div id="answer04"></div>
 
-        <div id="answer01">
-        </div>
+      <div class="gridTables">
+        <button class="btn" id="btn-modalAdd">
+          Split Name <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="btn" id="btn-modal02">
+          Find Vocals <i class="fas fa-search"></i>
+        </button>
+        <button class="btn" id="btn-modal03">
+          Map Name <i class="fas fa-map-signs"></i>
+        </button>
+        <button class="btn" id="btn-modal04">
+          Name & Surname <i class="fas fa-hand-spock"></i>
+        </button>
+      </div>
 
-        <div class="gridTables">
+      <!--Begin of modal 01-->
+      <div class="overlay" id="overlayAdd"></div>
+      <div class="modal" id="modalAdd">
+        <button class="modal-close-btn" id="close-btnAdd">
+          <a class="close-button">Close</a>
+        </button>
+        <!-- split name Form -->
+        <form name="splitNameForm">
+          <h3>Phase 01 | Split()</h3>
+          <div class="row">
+            <label>Write your Name</label><br />
+            <input type="text" id="txtName" />
+          </div>
 
-            <button class="btn" id="btn-modalAdd">Split Name <i class="fas fa-arrow-right"></i></button>
-
-        </div>
-
-
-
-        <div class="overlay" id="overlayAdd"></div>
-        <div class="modal" id="modalAdd">
-
-            <button class="modal-close-btn" id="close-btnAdd">
-                <a class="close-button">Close</a>
+          <div class="row">
+            <button
+              type="button"
+              type="button"
+              id="btnSplitName"
+              class="button"
+            >
+              Split Name <i class="fas fa-arrow-right"></i>
             </button>
-            <!-- add Holder Form -->
-            <form name="splitNameForm">
-                <h3>Phase 01 | Split()</h3>
-                <div class="row">
-                    <label>Write your Name</label><br>
-                    <input type="text" id="txtName">
-                </div>
-                
-                <div class="row">
-                    <button onclick="splitName()" type="button" id="splitName">Split Name <i class="fas fa-arrow-right"></i></button>
-                </div>
-            </form>
-        </div>
-        
+            <!--<button onclick="splitName()" type="button" id="btnSplitName">Split Name <i class="fas fa-arrow-right"></i></button>-->
+          </div>
+        </form>
+      </div>
 
+      <!--Begin of modal 02-->
+      <div class="overlay" id="overlay02"></div>
+      <div class="modal" id="modal02">
+        <button class="modal-close-btn" id="close-btn02">
+          <a class="close-button">Close</a>
+        </button>
+        <!-- find vocals Form -->
+        <form name="splitNameForm">
+          <h3>Phase 02 | Find Vocals</h3>
+          <div class="row">
+            <label>Write your Name</label><br />
+            <input type="text" id="txtName02" />
+          </div>
 
+          <div class="row">
+            <button
+              type="button"
+              type="button"
+              id="btnFindVocals"
+              class="button"
+            >
+              Find Vocals <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
 
+      <!--Begin of modal 03-->
+      <div class="overlay" id="overlay03"></div>
+      <div class="modal" id="modal03">
+        <button class="modal-close-btn" id="close-btn03">
+          <a class="close-button">Close</a>
+        </button>
+        <!-- map name Form -->
+        <form name="splitNameForm">
+          <h3>Phase 03 | Map() Name</h3>
+          <div class="row">
+            <label>Write your Name</label><br />
+            <input type="text" id="txtName03" />
+          </div>
+
+          <div class="row">
+            <button type="button" type="button" id="btnMapName" class="button">
+              Map Name <i class="fas fa-map-signs"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!--Begin of modal 04-->
+      <div class="overlay" id="overlay04"></div>
+      <div class="modal" id="modal04">
+        <button class="modal-close-btn" id="close-btn04">
+          <a class="close-button">Close</a>
+        </button>
+        <!-- map name Form -->
+        <form name="splitNameForm">
+          <h3>Phase 04 | Name & Surname</h3>
+          <div class="row">
+            <label>Write your Name</label><br />
+            <input type="text" id="txtName04" />
+          </div>
+
+          <div class="row">
+            <label>Write your Surname</label><br />
+            <input type="text" id="txtSurname04" />
+          </div>
+
+          <div class="row">
+            <button
+              type="button"
+              type="button"
+              id="btnNameSurname"
+              class="button"
+            >
+              Name & Surname <i class="fas fa-hand-spock"></i>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="js/modal.js"></script>
     <script src="js/scripts.js"></script>
-
-</body>
-
+  </body>
 </html>
